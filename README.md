@@ -22,7 +22,7 @@ Automation Framework using the XGEN Smart Locator Api's from [TestDynamix.io](#h
   The getLocator function is a wrapper around the API calls made to the Xgen Smart locator system
   ```
 
-## Api references
+## API references
 
 ```Host: https://www.testdynamix.io/api/<endpoint>```
 
