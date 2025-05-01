@@ -3,7 +3,7 @@ Automation Framework using the XGEN Smart Locator Api's from [TestDynamix.io](#h
 
 ## Table of Contents
 - [About](#about)
-- [API references](#apireference)
+- [API references](#apireferences)
 - [Setup](#setup)
 
 ## About
