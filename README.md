@@ -123,6 +123,15 @@ Automation Framework using the XGEN Smart Locator Api's from [TestDynamix.io](#h
          "xpath" : "//div/div[2]/div[2]/div/div[2]/div/div[6]/div[3]/button[contains(@class,'btn_primary btn_inventory') and contains(normalize-space(), 'ADD TO CART')]"
         }
 
+## Setup
+
+
+
+
+
+
+
+
     
 
 
