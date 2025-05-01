@@ -9,13 +9,15 @@ Automation Framework using the XGEN Smart Locator Api's from [TestDynamix.io](#h
 ## About
 - This automation test framework uses Playwright to interact with the [application under test](#https://www.saucedemo.com/v1/index.html)
 - The framework adopts 'Page Object model' for the application under test but does not store any static element locators as like the traditional approach
-  ```E.g
+  ```
+  E.g
     Locator username = getLocator("username", "input");
     Locator password = getLocator("password", "input");
     Locator login = getLocator("login","input");
   ```
 - The framework hits the end points of XGEN Smart locator System to get the locators by passing the keyword of the element and its tag name
-  ```E.g
+  ```
+  E.g
   A login button whose display name is "Login" will have the locator fetched through the getLocator("login", "button)
   The getLocator function is a wrapper around the API calls made to the Xgen Smart locator system
   ```
