@@ -3,7 +3,8 @@ Automation Framework using the XGEN Smart Locator Api's from [TestDynamix.io](#h
 
 ## Table of Contents
 - [About](#about)
-- [API references](#apireferences)
+- [API references](#api-references)
+- [Requirements](#requirements)
 - [Setup](#setup)
 
 ## About
@@ -123,8 +124,22 @@ Automation Framework using the XGEN Smart Locator Api's from [TestDynamix.io](#h
          "xpath" : "//div/div[2]/div[2]/div/div[2]/div/div[6]/div[3]/button[contains(@class,'btn_primary btn_inventory') and contains(normalize-space(), 'ADD TO CART')]"
         }
 
-## Setup
+## Requirements
+  
+  Chrome browser(latest)
 
+## Setup
+  ```
+  Run test : mvn clean compile test
+  ```
+
+  This will open up Chrome browser invoked by playwright and run the ```src/test/java/API/E2EPlayWrightAPITest.java```
+  
+  Page Objects - Refer for sample implementations in
+
+  ```src/test/java/API/pageobjects/LoginPage.java ```
+
+  ```src/test/java/API/pageobjects/InventoryPage.java```
 
 
 
