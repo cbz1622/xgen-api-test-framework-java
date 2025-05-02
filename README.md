@@ -32,63 +32,78 @@ Automation Framework using the XGEN Smart Locator Api's from [TestDynamix.io](#h
   - Host: https://www.testdynamix.io/api
 
     Endpoint: PUT /getLocator
+
     Description : Gets the locator for a specific search criteria
+
     Request Body (JSON): The current url and the pagecontents are sent along with the search criteria and tagname as parameters
+    
         {
             "url" : "https://<weburl>"
             "pageSource" : <html/xml document>
         }
     
-    Parameters: 
+    Parameters:
+    
         searchCriteria : <String>
         tagname : <String>
 
     Request Example:
+    
         'https://www.testdynamix.io/api/getLocator?tagName=input&searchCriteria=username'
 
     Response:
+    
         {
-            "<locatoridentifier>" : "<locator>"
+            <locatoridentifier> : <locator>
         }
 
     Response Status(es):
+    
         200 OK / 404 NOT FOUND
     
     Response Body Example:
+    
         {
         "xpath" : "//div[2]/div[1]/div/div/form/input[contains(@class,'form_input') and contains(@type, 'text') and contains(@data-test, 'username') and contains(@id,     'user-  name') and contains(@name, 'user-name') and contains(@placeholder, 'Username') and contains(@autocorrect, 'off') and contains(@autocapitalize, 'none') and contains(@value, '')]"
         }
 
     Endpoint: PUT /getLocators
+    
     Description : Gets a list of locator for a specific search criteria
+
     Request Body (JSON): The current url and the pagecontents are sent along with the search criteria and tagname as parameters
+    
         {
             "url" : "https://<weburl>"
             "pageSource" : <html/xml document>
         }
     
-    Parameters: 
+    Parameters:
+    
         searchCriteria : <String>
         tagname : <String>
 
     Request Example:
+    
         'https://www.testdynamix.io/api/getLocators?searchCriteria=add+to+cart&tagName=BUTTON'
 
     Response:
-    [
-        {
-            "<locatoridentifier>" : "<locator>"
-        },
-        {
-            "<locatoridentifier>" : "<locator>"
-        }
-    ]
-        
 
-    Response Status:
+        [
+          {
+          <locatorIdentifier> : <locator>
+          }
+          {
+          <loctorIdentifier> : <locator>
+          }
+        ]
+        
+  Response Status:
+  
         200 OK / 404 NOT FOUND
     
-    Response Body Example:
+  Response Body Example:
+  
     [ 
        {
         "xpath" : "//div[2]/div[1]/div/div/form/input[contains(@class,'form_input') and contains(@type, 'text') and contains(@data-test, 'username') and contains(@id, 'user-name') and contains(@name, 'user-name') and contains(@placeholder, 'Username') and contains(@autocorrect, 'off') and contains(@autocapitalize, 'none') and contains(@value, '')]"
@@ -98,32 +113,40 @@ Automation Framework using the XGEN Smart Locator Api's from [TestDynamix.io](#h
        }
     ]
 
-    Endpoint: PUT /getLocatorWithContext
-    Description : Gets the locator for a specific search criteria using realtive context
-    Request Body (JSON): The current url and the pagecontents are sent along with the search criteria, tagname and optional realtive context as parameters
+  Endpoint: PUT /getLocatorWithContext
+    
+  Description : Gets the locator for a specific search criteria using realtive context
+    
+  Request Body (JSON): The current url and the pagecontents are sent along with the search criteria, tagname and optional realtive context as parameters
+    
         {
             "url" : "https://<weburl>"
             "pageSource" : <html>
         }
     
-    Parameters: 
+  Parameters: 
+        
         searchCriteria : <String>
         tagname : <String>
         relativeContext : <String>
 
-    Request Example:
+  Request Example:
+    
         Without relative context - 'https://www.testdynamix.io/api/getLocatorWithContext?searchCriteria=product_sort_container&tagName=SELECT'
         With relative context - 'https://www.testdynamix.io/api/getLocatorWithContext?searchCriteria=add to cart&tagName=BUTTON&relativeContext=%2449.99'
 
-    Response:
+  Response:
+  
         {
-            "<locatoridentifier>" : "<locator>"
+            <locatoridentifier> : <locator>
         }
 
-    Response Status(es):
+  Response Status(es):
+  
         200 OK / 404 NOT FOUND
     
-    Response Body Example:
+  Response Body Example:
+  
         {
          "xpath" : "//div/div[2]/div[2]/div/div[2]/div/div[6]/div[3]/button[contains(@class,'btn_primary btn_inventory') and contains(normalize-space(), 'ADD TO CART')]"
         }
@@ -135,6 +158,7 @@ Automation Framework using the XGEN Smart Locator Api's from [TestDynamix.io](#h
 ## Setup
 
   The ```tagname``` that is to be supplied when getting an element by the search criteria is defined within the limits of below
+  
     ```BUTTON
     DIV
     SPAN
@@ -162,13 +186,3 @@ Automation Framework using the XGEN Smart Locator Api's from [TestDynamix.io](#h
   ```src/test/java/API/pageobjects/LoginPage.java ```
 
   ```src/test/java/API/pageobjects/InventoryPage.java```
-
-
-
-
-
-
-
-    
-
-
