@@ -1,5 +1,5 @@
 # xgen-api-test-framework-java
-Automation Framework using the XGEN Smart Locator Api's from [TestDynamix.io](#https://www.testdynamix.io)
+Automation Framework using the XGEN Smart Locator Api's from [TestDynamix.io](https://www.testdynamix.io)
 
 ## Table of Contents
 - [About](#about)
