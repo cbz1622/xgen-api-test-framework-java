@@ -129,6 +129,24 @@ Automation Framework using the XGEN Smart Locator Api's from [TestDynamix.io](#h
   Chrome browser(latest)
 
 ## Setup
+
+  The ```tagname``` that is to be supplied when getting an element by the search criteria is defined within the limits of below
+    ```BUTTON
+    DIV
+    SPAN
+    INPUT
+    SELECT
+    OPTION
+    FORM
+    ANCHOR
+    LI
+    UL
+    IMG```
+    
+  If an element tagname falls outside of the above, `OTHERS` tagname can be used to substitute. This way any element irrespective of the tagname (apart from the ones mentioned above) will still be processed and retrieved.
+
+### Run tests
+
   ```
   Run test : mvn clean compile test
   ```
