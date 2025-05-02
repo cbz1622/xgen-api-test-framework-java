@@ -27,9 +27,9 @@ Automation Framework using the XGEN Smart Locator Api's from [TestDynamix.io](#h
 
   ### Swagger document
   
-  - [testdynamix.io](#https://www.testdynamix.io/swagger-ui/index.html)
+  - [testdynamix.io](https://www.testdynamix.io/swagger-ui/index.html)
 
-  ```Host: https://www.testdynamix.io/api/<endpoint>```
+  - Host: https://www.testdynamix.io/api
 
     Endpoint: PUT /getLocator
     Description : Gets the locator for a specific search criteria
