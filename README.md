@@ -25,7 +25,11 @@ Automation Framework using the XGEN Smart Locator Api's from [TestDynamix.io](#h
 
 ## API references
 
-```Host: https://www.testdynamix.io/api/<endpoint>```
+  ### Swagger document
+  
+  ```https://www.testdynamix.io/swagger-ui/index.html#/locator-controller/searchLocator```
+
+  ```Host: https://www.testdynamix.io/api/<endpoint>```
 
     Endpoint: PUT /getLocator
     Description : Gets the locator for a specific search criteria
@@ -52,7 +56,7 @@ Automation Framework using the XGEN Smart Locator Api's from [TestDynamix.io](#h
     
     Response Body Example:
         {
-        "xpath" : "//div[2]/div[1]/div/div/form/input[contains(@class,'form_input') and contains(@type, 'text') and contains(@data-test, 'username') and contains(@id, 'user-name') and contains(@name, 'user-name') and contains(@placeholder, 'Username') and contains(@autocorrect, 'off') and contains(@autocapitalize, 'none') and contains(@value, '')]"
+        "xpath" : "//div[2]/div[1]/div/div/form/input[contains(@class,'form_input') and contains(@type, 'text') and contains(@data-test, 'username') and contains(@id,     'user-  name') and contains(@name, 'user-name') and contains(@placeholder, 'Username') and contains(@autocorrect, 'off') and contains(@autocapitalize, 'none') and contains(@value, '')]"
         }
 
     Endpoint: PUT /getLocators
@@ -99,7 +103,7 @@ Automation Framework using the XGEN Smart Locator Api's from [TestDynamix.io](#h
     Request Body (JSON): The current url and the pagecontents are sent along with the search criteria, tagname and optional realtive context as parameters
         {
             "url" : "https://<weburl>"
-            "pageContent" : <html/xml document>
+            "pageSource" : <html>
         }
     
     Parameters: 
